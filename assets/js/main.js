@@ -282,7 +282,7 @@ function getFetch(e) {
 			teaName.innerHTML = choice
 			td1.innerHTML = data.leavesAmount  
 			td2.innerHTML = data.waterTemp
-			td3.innerHTML = data.waterTemp
+			td3.innerHTML = data.steepTime
 		})
 		
 }
