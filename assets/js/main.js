@@ -278,7 +278,6 @@ function getFetch(e) {
 	fetch(url)
 		.then(res => res.json())
 		.then(data => {
-			console.log(data)
 			teaName.innerHTML = choice
 			td1.innerHTML = data.leavesAmount  
 			td2.innerHTML = data.waterTemp
