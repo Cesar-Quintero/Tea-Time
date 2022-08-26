@@ -259,7 +259,7 @@
 
 
 
-// fetch data and render in html
+// fetch data and render in HTML
 
 document.querySelector('#confirmBtn').addEventListener('click', getFetch)
 
@@ -272,6 +272,7 @@ function getFetch(e) {
 	const td1 = document.querySelector('.td1')
 	const td2 = document.querySelector('.td2')
 	const td3 = document.querySelector('.td3')
+	const teaImg = document.querySelector('.tImg')
 
 	document.querySelector('#teaInfo').classList.remove('hidden')
 
@@ -282,6 +283,7 @@ function getFetch(e) {
 			td1.innerHTML = data.leavesAmount  
 			td2.innerHTML = data.waterTemp
 			td3.innerHTML = data.steepTime
+			teaImg.src = `images/${choice}.jpg`
 		})
 		
 }
