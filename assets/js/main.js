@@ -267,7 +267,7 @@ function getFetch(e) {
 	e.preventDefault();
 
 	const choice = document.querySelector('#demo-category').value
-	const url = `https://tea-brew-api-production.up.railway.app/api/${choice}`
+	const url = `https://tea-brew-api.cyclic.app/api/${choice}`
 	const teaName = document.querySelector('.teaName')
 	const td1 = document.querySelector('.td1')
 	const td2 = document.querySelector('.td2')
@@ -280,7 +280,7 @@ function getFetch(e) {
 		.then(res => res.json())
 		.then(data => {
 			teaName.innerHTML = choice
-			td1.innerHTML = data.leavesAmount  
+			td1.innerHTML = data.leavesAmount
 			td2.innerHTML = data.waterTemp
 			td3.innerHTML = data.steepTime
 			teaImg.src = `images/${choice}.jpg`
