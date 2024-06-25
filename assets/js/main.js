@@ -267,7 +267,7 @@ function getFetch(e) {
 	e.preventDefault();
 
 	const choice = document.querySelector('#demo-category').value
-	const url = `https://tea-brew-api.cyclic.app/api/${choice}`
+	const url = `https://tea-brew-api.onrender.com/api/${choice}`
 	const teaName = document.querySelector('.teaName')
 	const td1 = document.querySelector('.td1')
 	const td2 = document.querySelector('.td2')
